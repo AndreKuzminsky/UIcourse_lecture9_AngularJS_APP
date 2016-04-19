@@ -1,21 +1,20 @@
 (function() {
-	"use strict";
+    "use strict";
 
-function AddItemCtlr($scope, $location, ShopListService) {
-	$scope.name = '';
-	$scope.shop = '';
-	$scope.quantity = '';
+    function AddItemCtlr($scope, $location, ShopListService) {
+        $scope.name = '';
+        $scope.shop = '';
+        $scope.quantity = '';
 
-	$scope.addItem = addItem;
+        $scope.addItem = addItem;
 
-	function addItem() {
+        function addItem() {
             ShopListService.addItem($scope.newName, $scope.newShop, $scope.newQuantity);
             $location.path('/');
         }
+    }
 
-}
-
-	angular
+    angular
         .module('shop-list')
         .controller('AddItemCtlr', AddItemCtlr);
 })()
