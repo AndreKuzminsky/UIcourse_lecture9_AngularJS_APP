@@ -1,9 +1,8 @@
 (function() {
-	"use strict";
+    "use strict";
 
-	function MainCtrl($scope, ShopListService) {
+    function MainCtrl($scope, ShopListService) {
         $scope.items = ShopListService.items;
-
         $scope.removeItem = removeItem;
 
         function removeItem() {

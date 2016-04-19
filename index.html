@@ -21,7 +21,7 @@
     <script type="text/ng-template" id="main-page/main-page.tpl.html">
         <h2>What I need to buy?</h2>
         <div class="add-button">
-        <a class="btn btn-primary" href="#/add-item">Add new item</a>
+            <a class="btn btn-primary" href="#/add-item">Add new item</a>
         </div>
         <table class="table table-striped">
             <tr>
@@ -42,10 +42,8 @@
         </table>
         Filter by shop:
         <input type="text" ng-model="search" placeholder="Enter first letters">
-        
     </script>
     <!-- /Main page -->
-
     <!-- Add-item page -->
     <script type="text/ng-template" id="add-item/add-item.tpl.html">
         <h2>Create new item</h2>
@@ -53,21 +51,26 @@
             <a class="btn btn-info" href="#/">Return to main page</a>
         </div>
         <table class="table table-bordered">
-        <tr>
-            <td>Enter shop:</td>
-            <td><input type="text" ng-model="newName" placeholder="Auchan"></td>
-        </tr>
-        <tr>
-            <td>Enter item:</td>
-            <td><input type="text" ng-model="newShop" placeholder="Potato"></td>
-        </tr>
-        <tr>
-            <td>Enter quantity:</td>
-            <td><input type="text" ng-model="newQuantity" placeholder="1,5kg"></td>
-        </tr>
+            <tr>
+                <td>Enter shop:</td>
+                <td>
+                    <input type="text" ng-model="newName" placeholder="Auchan">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter item:</td>
+                <td>
+                    <input type="text" ng-model="newShop" placeholder="Potato">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter quantity:</td>
+                <td>
+                    <input type="text" ng-model="newQuantity" placeholder="1,5kg">
+                </td>
+            </tr>
         </table>
         <button type="button" class="btn btn-success btn-lg" ng-click="addItem()">Add Item to list</button>
-        
     </script>
     <!-- Add-item page -->
 </body>

@@ -1,8 +1,8 @@
 (function() {
-  angular.module('shop-list')
+    angular.module('shop-list')
         .config(routes);
 
-function routes($routeProvider) {
+    function routes($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'main-page/main-page.tpl.html',
@@ -13,5 +13,4 @@ function routes($routeProvider) {
                 controller: 'AddItemCtlr'
             })
     }
-
 })()

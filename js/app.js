@@ -3,6 +3,4 @@
 
     angular.module('shop-list', ['ngRoute']);
 
-    
-
 })();
