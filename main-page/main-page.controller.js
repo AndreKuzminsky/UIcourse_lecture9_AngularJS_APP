@@ -5,8 +5,8 @@
         $scope.items = ShopListService.items;
         $scope.removeItem = removeItem;
 
-        function removeItem() {
-            ShopListService.removeItem();
+        function removeItem(itemId) {
+            ShopListService.removeItem(itemId);
         }
     };
 

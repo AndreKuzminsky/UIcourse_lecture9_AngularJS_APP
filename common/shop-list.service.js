@@ -42,7 +42,6 @@
         function removeItem(id) {
             for (var i = 0; i < items.length; i++) {
                 if (items[i].id === id) {
-                    alert("ID: " + items[i].id + "Shop: " + items[i].shop);
                     items.splice(i, 1);
                     break;
                 }
